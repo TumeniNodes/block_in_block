@@ -1,2 +1,2 @@
 # block_in_block
-Adds a node which can be placed inside default nodes
+Adds decorative node which can be placed inside of default nodes in Minetest Game.
