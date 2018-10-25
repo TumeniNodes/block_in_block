@@ -1,0 +1,17 @@
+License for textures
+
+Copyright © 2018 TumeniNodes CC BY-SA 3.0
+block_1_top.png
+block_1_side.png
+block_2.png
+
+All textures derived from textures originally by the following contributors...
+
+Cisoun's texture pack (CC BY-SA 3.0):
+  default_stone.png
+
+BlockMen (CC BY-SA 3.0):
+  default_wood.png
+
+kilbith (CC BY-SA 3.0):
+  default_gold_block.png
