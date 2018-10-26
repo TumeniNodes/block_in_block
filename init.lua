@@ -94,7 +94,7 @@ minetest.register_node("block_in_block:green_slime_mossycobble", {
 	use_texture_alpha = true,
 	is_ground_content = false,
 	groups = {cracky = 3},
-	drop = 'default:aspen_sapling',
+	drop = 'default:mese_post_light',
 	sounds = default.node_sound_stone_defaults(),
 	selection_box = {
 		type = "fixed",
