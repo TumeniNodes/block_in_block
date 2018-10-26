@@ -49,11 +49,48 @@ minetest.register_node("block_in_block:block_3", {
 	description = "Block 3",
 	drawtype = "mesh",
 	mesh = "block_in_block.obj",
-	tiles = {"default_wood.png", "default_glass.png"},
+	tiles = {"default_gold_block.png", "default_obsidian_glass.png"},
 	paramtype = "light",
 	is_ground_content = false,
 	groups = {cracky = 3},
-	drop = 'default:wood',
+	drop = 'default:gold_lump',
+	sounds = default.node_sound_stone_defaults(),
+	selection_box = {
+		type = "fixed",
+		fixed = {
+			{-0.5, -0.5, -0.5, 0.5, 0.5, 0.5},
+		}
+	}
+})
+
+minetest.register_node("block_in_block:block_4", {
+	description = "Block 4",
+	drawtype = "mesh",
+	mesh = "block_in_block.obj",
+	tiles = {"default_diamond_block.png", "default_glass.png"},
+	paramtype = "light",
+	is_ground_content = false,
+	groups = {cracky = 3},
+	drop = 'default:aspen_sapling',
+	sounds = default.node_sound_stone_defaults(),
+	selection_box = {
+		type = "fixed",
+		fixed = {
+			{-0.5, -0.5, -0.5, 0.5, 0.5, 0.5},
+		}
+	}
+})
+
+minetest.register_node("block_in_block:green_slime_mossycobble", {
+	description = "Green Slime Mossy Cobble",
+	drawtype = "mesh",
+	mesh = "block_in_block.obj",
+	tiles = {"default_mossycobble.png", "green_slime.png"},
+	paramtype = "light",
+	use_texture_alpha = true,
+	is_ground_content = false,
+	groups = {cracky = 3},
+	drop = 'default:aspen_sapling',
 	sounds = default.node_sound_stone_defaults(),
 	selection_box = {
 		type = "fixed",

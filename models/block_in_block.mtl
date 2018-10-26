@@ -1,0 +1,24 @@
+# Blender MTL File: 'block_in_block.blend'
+# Material Count: 2
+
+newmtl Material.001
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.042654 0.137327 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/paul/Homer/minetest/games/minetest_game/mods/default/textures/default_obsidian_glass.png
+
+newmtl Material.002
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.283146 0.640000 0.030032
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/paul/Homer/minetest/games/minetest_game/mods/default/textures/default_gold_block.png
