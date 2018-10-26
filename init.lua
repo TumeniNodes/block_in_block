@@ -1,6 +1,6 @@
 -- block_in_block | October 2018 TumeniNodes
 
---a node which can be set inside default nodes
+--a node which can be set inside default nodes. you must point at the top of the other node
 
 minetest.register_node("block_in_block:block_1", {
 	description = "Block 1",
@@ -42,6 +42,8 @@ minetest.register_node("block_in_block:block_2", {
 		}
 	}
 })
+
+-- Let's add a mesh version, just for giggles
 
 minetest.register_node("block_in_block:block_3", {
 	description = "Block 3",
