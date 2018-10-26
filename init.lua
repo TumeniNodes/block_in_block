@@ -48,8 +48,6 @@ minetest.register_node("block_in_block:block_3", {
 	drawtype = "mesh",
 	mesh = "block_in_block.obj",
 	tiles = {"default_wood.png", "default_glass.png"},
---	wield_image = "block_1_side.png",
---	visual_scale = 0.5,
 	paramtype = "light",
 	is_ground_content = false,
 	groups = {cracky = 3},
