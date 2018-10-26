@@ -42,3 +42,23 @@ minetest.register_node("block_in_block:block_2", {
 		}
 	}
 })
+
+minetest.register_node("block_in_block:block_3", {
+	description = "Block 3",
+	drawtype = "mesh",
+	mesh = "block_in_block.obj",
+	tiles = {"default_wood.png", "default_glass.png"},
+--	wield_image = "block_1_side.png",
+--	visual_scale = 0.5,
+	paramtype = "light",
+	is_ground_content = false,
+	groups = {cracky = 3},
+	drop = 'default:wood',
+	sounds = default.node_sound_stone_defaults(),
+	selection_box = {
+		type = "fixed",
+		fixed = {
+			{-0.5, -0.5, -0.5, 0.5, 0.5, 0.5},
+		}
+	}
+})
