@@ -1,0 +1,6 @@
+License of media:
+-----------------
+Copyright (C) 2018 TumeniNodes (CC BY-SA 4.0)
+
+  block_in_block.blend
+  block_in_block.obj

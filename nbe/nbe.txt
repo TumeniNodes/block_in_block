@@ -1,5 +1,3 @@
 these are the nbe (node box editor files, for use with:
 
 https://forum.minetest.net/viewtopic.php?f=14&t=2840&hilit=nodebox+editor
-
-(see forum post for licensing)

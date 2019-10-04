@@ -1,6 +1,7 @@
 -- block_in_block | October 2018 TumeniNodes
 
---a node which can be set inside default nodes. you must point at the top of the other node
+--a node which can be set inside default nodes. you must point at the
+--top of the other node to place it.
 
 minetest.register_node("block_in_block:block_1", {
 	description = "Block 1",
@@ -12,7 +13,7 @@ minetest.register_node("block_in_block:block_1", {
 	paramtype = "light",
 	is_ground_content = false,
 	groups = {cracky = 3},
-	drop = 'default:apple',
+	drop = "default:apple",
 	sounds = default.node_sound_stone_defaults(),
 	node_box = {
 		type = "fixed",
@@ -32,8 +33,9 @@ minetest.register_node("block_in_block:block_2", {
 	visual_scale = 0.5,
 	paramtype = "light",
 	is_ground_content = false,
+	light_source = 6,
 	groups = {cracky = 3},
-	drop = 'default:gold_lump',
+	drop = "default:gold_lump",
 	sounds = default.node_sound_stone_defaults(),
 	node_box = {
 		type = "fixed",
@@ -43,7 +45,8 @@ minetest.register_node("block_in_block:block_2", {
 	}
 })
 
--- Let's add a mesh version, just for giggles
+-- Let's add a mesh version, just for giggles plus silly drops
+-- First tile = inner node Second tile = outer node
 
 minetest.register_node("block_in_block:block_3", {
 	description = "Block 3",
@@ -53,7 +56,7 @@ minetest.register_node("block_in_block:block_3", {
 	paramtype = "light",
 	is_ground_content = false,
 	groups = {cracky = 3},
-	drop = 'default:gold_lump',
+	drop = "default:gold_lump",
 	sounds = default.node_sound_stone_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -71,7 +74,7 @@ minetest.register_node("block_in_block:block_4", {
 	paramtype = "light",
 	is_ground_content = false,
 	groups = {cracky = 3},
-	drop = 'default:aspen_sapling',
+	drop = "default:aspen_sapling",
 	sounds = default.node_sound_stone_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -87,15 +90,77 @@ minetest.register_node("block_in_block:green_slime_mossycobble", {
 	mesh = "block_in_block.obj",
 	tiles = {"default_mossycobble.png", "green_slime.png"},
 	inventory_image = minetest.inventorycube("block_side_inv.png", "block_side_inv.png", "block_side_inv.png"),
---	inventory_image = "block_renderx32.png",
---	wield_image = "block_renderx32.png",
 	paramtype = "light",
 	sunlight_propagates = true,
 	use_texture_alpha = true,
 	is_ground_content = false,
 	groups = {cracky = 3},
-	drop = 'default:mese_post_light',
+	drop = "default:mese_post_light",
 	sounds = default.node_sound_stone_defaults(),
+	selection_box = {
+		type = "fixed",
+		fixed = {
+			{-0.5, -0.5, -0.5, 0.5, 0.5, 0.5},
+		}
+	}
+})
+
+minetest.register_node("block_in_block:green_liquid_light", {
+	description = "Green Liquid Light",
+	drawtype = "mesh",
+	mesh = "block_in_block.obj",
+	tiles = { "default_mese_block.png",
+			{name = "green_liquid.png",
+			animation = {
+					type = "vertical_frames",
+					aspect_w = 16,
+					aspect_h = 16,
+					length = 1,
+			}
+		}
+	},
+	inventory_image = minetest.inventorycube("green_liquid_invcube.png", "green_liquid_invcube.png", "green_liquid_invcube.png"),
+	paramtype = "light",
+	sunlight_propagates = true,
+	use_texture_alpha = true,
+	is_ground_content = false,
+	light_source = 9,
+	groups = {cracky = 3},
+	drop = "default:dirt_with_grass",
+	sounds = default.node_sound_water_defaults(),
+	selection_box = {
+		type = "fixed",
+		fixed = {
+			{-0.5, -0.5, -0.5, 0.5, 0.5, 0.5},
+		}
+	}
+})
+
+-- Cool but can we switch the animated texture around?
+-- Sure
+
+minetest.register_node("block_in_block:green_liquid_inner", {
+	description = "Green Liquid Inner",
+	drawtype = "mesh",
+	mesh = "block_in_block.obj",
+	tiles = {
+			{name = "green_liquid.png",
+			animation = {
+					type = "vertical_frames",
+					aspect_w = 16,
+					aspect_h = 16,
+					length = 1,
+			}
+		}, "default_glass.png",
+	},
+	inventory_image = minetest.inventorycube("green_liquid_innercube.png", "green_liquid_innercube.png", "green_liquid_innercube.png"),
+	paramtype = "light",
+	sunlight_propagates = true,
+	use_texture_alpha = true,
+	is_ground_content = false,
+	groups = {cracky = 3},
+	drop = "default:dirt_with_dry_grass",
+	sounds = default.node_sound_glass_defaults(),
 	selection_box = {
 		type = "fixed",
 		fixed = {

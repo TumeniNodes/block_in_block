@@ -1,10 +1,16 @@
-License for textures
+License for textures:
+--------------------
 
-Copyright © 2018 TumeniNodes CC BY-SA 3.0
+Copyright (C) 2018 TumeniNodes CC BY-SA 3.0
 block_1_bottom.png
 block_1_side.png
 block_1_top.png
 block_2.png
+block_side_inv.png
+green_liquid.png
+green_liquid_innercube.png
+green_liquid_invcube.png
+green_slime.png
 
 All textures derived from textures originally by the following contributors...
 
@@ -16,3 +22,12 @@ BlockMen (CC BY-SA 3.0):
 
 kilbith (CC BY-SA 3.0):
   default_gold_block.png
+
+paramat (CC BY-SA 3.0):
+  default_mese_block.png
+
+RealBadAngel animated water (CC BY-SA 3.0):
+  default_water_source_animated.png
+
+Krock (CC0 1.0):
+  default_glass.png
